@@ -1,5 +1,4 @@
 
-Source:
 https://www.reddit.com/r/dailyprogrammer/comments/3nkanm/20151005_challenge_235_easy_ruthaaron_pairs/
 
 "In mathematics, a Ruth–Aaron pair consists of two consecutive integers (e.g. 714 and 715) for which the sums of the distinct prime factors of each integer are equal. For example, we know that (714, 715) is a valid Ruth-Aaron pair because its distinct prime factors are:
@@ -14,6 +13,7 @@ Your task today is to determine if a pair of numbers is indeed a valid Ruth-Aaro
 Input Description
 
 You'll be given a single integer N on one line to tell you how many pairs to read, and then that many pairs as two-tuples. For example:
+
 3
 (714,715)
 (77,78)
@@ -22,6 +22,7 @@ You'll be given a single integer N on one line to tell you how many pairs to rea
 Output Description
 
 Your program should emit if the numbers are valid Ruth-Aaron pairs. Example:
+
 (714,715) VALID
 (77,78) VALID
 (20,21) NOT VALID
