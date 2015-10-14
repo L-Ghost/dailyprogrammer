@@ -7,7 +7,7 @@ class DarkForest
   attr_reader :check_action, :sword, :death # boolean
   
   def initialize
-    @stranger = "Melvin"
+    @stranger = "Melvin" # you can change the name of your enemy here
     @check_action = false
     @death = false
     @sword = false
@@ -144,12 +144,16 @@ class DarkForest
   end
   
   def part_attack_s
-    puts "\nYou allow #{stranger} to cross before you. So he goes. When he arrives at the other side, he keeps looking straight ahead."
-    puts "You slowly start crossing the bridge. When you are near the end of it, you prepare to attack."
-    puts "You attack #{stranger} right through his back with your sword."
-    puts "#{stranger} gasps as his lungs are filled with blood. He then falls to the floor."
-    part_conclusion
-    abort
+    if (sword)
+      puts "\nYou allow #{stranger} to cross before you. So he goes. When he arrives at the other side, he keeps looking straight ahead."
+      puts "You slowly start crossing the bridge. When you are near the end of it, you prepare to attack."
+      puts "You attack #{stranger} right through his back with your sword."
+      puts "#{stranger} gasps as his lungs are filled with blood. He then falls to the floor."
+      part_conclusion
+      abort
+    else
+      puts "INVALID ACTION"
+    end
   end
   
   def part_spell
