@@ -45,7 +45,7 @@ class DarkForest
   end
   
   def part3
-    puts "\nYou two arrive at a bridge. It seems to be very, and it might crumble if under too much weight."
+    puts "\nYou two arrive at a bridge. It seems to be very old, and it might crumble if under too much weight."
     puts "#{stranger} turns to you:"
     puts "\"I think we shouldn't cross this bridge at the same time. What do you think, #{name}? What should we do?\""
     
@@ -130,7 +130,7 @@ class DarkForest
   def part_attack1
     puts "\nYou try to attack #{stranger}, but you are too nervous, and he is very aware of your actions."
     puts "#{stranger} prepares another another spell, which makes a tree hits you from behind, making you drop the sword."
-    puts "The tree branches capture you, and lift you to the table. They finish with you by making a hole in your chest."
+    puts "The tree branches capture you, and lift you, taking your body to the table. They finish with you by craving a hole in your chest."
   end
   
   def part_attack2
