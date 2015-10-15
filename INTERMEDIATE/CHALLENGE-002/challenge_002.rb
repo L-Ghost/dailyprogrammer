@@ -129,7 +129,7 @@ class DarkForest
   
   def part_attack1
     puts "\nYou try to attack #{stranger}, but you are too nervous, and he is very aware of your actions."
-    puts "#{stranger} prepares another another spell, which makes a tree hits you from behind, making you drop the sword."
+    puts "#{stranger} prepares another spell, which makes a tree hits you from behind, making you drop the sword."
     puts "The tree branches capture you, and lift you, taking your body to the table. They finish with you by craving a hole in your chest."
   end
   
