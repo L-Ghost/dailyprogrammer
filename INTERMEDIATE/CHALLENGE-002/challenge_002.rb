@@ -11,7 +11,6 @@ class DarkForest
     @check_action = false
     @death = false
     @sword = false
-    part1
   end
   
   def part1
@@ -184,3 +183,4 @@ class DarkForest
 end
 
 forest = DarkForest.new
+forest.part1
