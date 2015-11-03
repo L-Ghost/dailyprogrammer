@@ -26,6 +26,8 @@ class WordGenerator
           output_string += @cons_list[rand(@cons_list.length)]
         when "C"
           output_string += @cons_list[rand(@cons_list.length)].capitalize
+        when " "
+          output_string += " "
         else
           puts "You have informed an invalid character. Please try again."
           abort
