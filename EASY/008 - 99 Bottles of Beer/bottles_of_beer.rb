@@ -18,4 +18,4 @@ end
 #print output_string
 
 # single line solution - works if you save two bottles of beer for later
-#99.downto(3).each {|n| print "%i bottles of beer on the wall, %i bottles of beer.\nTake one down, pass it around, %i bottles of beer on the wall..." % [n, n, n - 1] + "\n"}
+99.downto(1).each {|n| print "%i bottles of beer on the wall, %i bottles of beer.\nTake one down, pass it around, %i bottles of beer on the wall..." % [n, n, (n - 1)] + "\n"}

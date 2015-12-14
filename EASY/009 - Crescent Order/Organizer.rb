@@ -1,5 +1,5 @@
 
-class Order
+class Organizer
   
   attr_accessor :input_string, :array_chars, :sz
     
@@ -11,9 +11,7 @@ class Order
   end
   
   def replaceStuff(ind1, ind2)
-    sub = @array_chars[ind1]
-    @array_chars[ind1] = @array_chars[ind2]
-    @array_chars[ind2] = sub
+    @array_chars[ind1], @array_chars[ind2] = @array_chars[ind2], @array_chars[ind1]
   end
   
   def toArrayNum() # organize numbers
@@ -31,11 +29,11 @@ class Order
       
     end
     
-    print @array_chars
+    print @array_chars.to_s + "\n"
     
   end
   
-   def toArrayChar() # organize characters
+  def toArrayChar() # organize characters
     
     puts "LETTER ORGANIZER"
     getString
@@ -50,12 +48,12 @@ class Order
       
     end
     
-    print @array_chars
+    print @array_chars.to_s + "\n"
     
   end 
   
 end
 
-order = Order.new
+order = Organizer.new
 order.toArrayNum()
 order.toArrayChar()
