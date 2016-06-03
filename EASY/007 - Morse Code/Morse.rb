@@ -1,8 +1,6 @@
 
 class Morse
   
-  attr_reader :morse_index, :input_string
-  
   def initialize
     @morse_index = {'.-' => 'a', '-...' => 'b', '-.-.' => 'c', '-..' => 'd', '.' => 'e', '..-.' => 'f', '--.' => 'g', '....' => 'h', '..' => 'i',
       '.---' => 'j', '-.-' => 'k', '.-..' => 'l', '--' => 'm', '-.' => 'n', '---' => 'o', '.--.' => 'p', '--.-' => 'q', '.-.' => 'r', '...' => 's',
@@ -11,7 +9,7 @@ class Morse
   
   def translateMorse # convert morse to letters
     
-    getCode
+    getCode(" morse ")
     output_string = ""
     
     @input_string.split(" ").each do |l|
@@ -32,7 +30,7 @@ class Morse
     getCode
     output_string = ""
     
-    @input_string.split("").each do |c|
+    @input_string.downcase.split("").each do |c|
       if (@morse_index.key(c))
         output_string += @morse_index.key(c) + " "
       else
@@ -44,8 +42,8 @@ class Morse
     
   end
   
-  def getCode
-    puts "Insert the code you want to translate."
+  def getCode(morse = " ")
+    puts "Insert the#{morse}code you want to translate."
     @input_string = gets.chomp
   end
   
