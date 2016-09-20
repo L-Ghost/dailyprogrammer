@@ -3,8 +3,6 @@ require 'bigdecimal/math'
 
 class PiCalculator
   
-  attr_accessor :num
-  
   def initialize
     puts "How many digits of PI do you want to see?"
     @num = gets.to_i

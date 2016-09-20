@@ -22,7 +22,7 @@ class LightSwitches
       if (input != "X")
         arrangeInput(input)
         changeSwitches
-        #printSwitches
+        printSwitches
         countSwitches
         puts "There are #{@count.to_s} bulbs turned on."
       end
